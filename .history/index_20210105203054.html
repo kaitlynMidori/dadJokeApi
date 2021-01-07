@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Joke Finder</title>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+  <h1>JOKES</h1>
+
+  <form action="#" class="js-search-form">
+    <fieldset name="lyric-search">
+      <legend>Search for Jokes</legend>
+      <label for="query-category">Category:</label>
+      <input type="text" name="query-category" id="query-category" placeholder="Select Category" list="query-category-list">
+                    <select id="joke-category-list">
+                        <option value="Any">Any</option>
+                        <option value="Misc">Misc</option>
+                        <option value="Programming">Programming</option>
+                        <option value="Dark">Dark</option>
+                        <option value="Pun">Pun</option>
+                        <option value="Spooky">Spooky</option>
+                        <option value="Christmas">Christmas</option>
+                    </select>
+      <button type="submit">Search</button>
+    </fieldset>
+  </form>
+
+  <div id="js-error-message"></div>
+  <section class="hidden" id="results">
+
+  </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+    

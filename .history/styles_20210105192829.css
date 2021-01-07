@@ -1,0 +1,205 @@
+.web-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: black;
+}
+
+/* header styling */
+header {
+    width: 100%;
+    background-color: white;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    margin-top: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Body styling */
+body, html {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+/* Image styling */
+.image-container {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding-top: 5px;
+}
+
+.image-container div {
+    flex: 1;
+}
+
+.image-container img {
+    margin: auto;
+    padding: auto;
+    border: solid;
+    border-style: solid;
+    border-width: thick;
+    border-color: white;
+}
+
+/* Form styling */
+.formWrapper {
+    background-color: white;
+    list-style-type: none;
+    padding: 0;
+    border-style: solid;
+    border-width: thin;
+    border-color: #fbfefb;
+}
+
+.form-container {
+    padding-top: 5px;
+    width: 100%;
+    margin: auto;
+    border: solid black thin;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    padding: .5em 1em .5em 1em;
+}
+
+.form-row >label {
+    flex: 1;
+}
+
+.form-row > input {
+    flex: 2;
+}
+
+.form-row > input,
+.form-row > button {
+    padding: .5em;
+}
+
+#submit-btn {
+    width: 175px;
+    max-width: 200px;
+    display:flex;
+    flex: 1;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+	background-color:white;
+	border-radius:2px;
+	border:1px solid black;
+	cursor:pointer;
+	color:black;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:10px 10px 10px 10px;
+	text-decoration:none;
+}
+
+/* results styling */
+#results-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.each-product-result {
+    padding-left: 7px;
+    list-style-type: none;
+    background-color: white;
+    border: lightgray;
+    border-style: solid;
+    border-width: thin;
+    width: 200px;
+}
+
+.each-product-result > .product-name {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 12px;
+    width: 160px;
+}
+
+.each-product-result > .product-img {
+    display: block;
+    border: white;
+    border-style: solid;
+    border-width: thin;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 150px;
+}
+
+.each-product-result > .product-price {
+    font-style: italic;
+}
+
+.each-product-result > .product-description {
+    font-size: 12px;
+    font-weight: lighter;
+    width: 180px;
+}
+
+/* YouTube video Styling */
+#yt-results-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.each-yt-result {
+    padding-left: 7px;
+    list-style-type: none;
+    background-color: white;
+    border: lightgray;
+    border-style: solid;
+    border-width: thin;
+    width: 200px;
+}
+
+.each-yt-result > .yt-title {
+    display: block;
+    margin-left: auto;
+    margin-left: auto;
+}
+
+.each-yt-result > .yt-description {
+    font-size: 12px;
+    width: 180px;
+}
+
+.each-yt-result > .yt-thumbnails {
+    display: block;
+    border: white;
+    border-style: solid;
+    border-width: thin;
+    margin-left: auto;
+    margin-right: auto;
+    height: 130px;
+    width: 150px;
+}
+
+

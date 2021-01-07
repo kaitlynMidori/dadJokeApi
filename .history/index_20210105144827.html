@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Joke Finder</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Joke Finder</h1>
+        <fieldset>
+            <legend>filter by</legend>
+            <form id="getJoke">
+                <p>
+                    <label for="JokeByType">Search by joke type:</label>
+                    <input type="text" name="JokeByType" id="JokeByType" placeholder="Joke Type" list="joke-list" required>
+                    <datalist id="joke-list">
+                        <option value="General">
+                        <option value="Knock-Knock">
+                        <option value="Programming">
+                    </datalist>
+                </p>
+                <button type="submit"> Fetch!!</button>
+            </form>
+        </fieldset>
+        
+        <!-- add section element to hold image whish is hidden from user until they click -->
+        <section class="results hidden">
+            <h2>Heres Your Joke!!</h2>
+            <div class="results" alt="text">
+        </section>
+        <section class="not-found">
+        </section>
+    </div>
+        
+        <script src="script.js"></script>
+    </script>
+</body>
+</html>

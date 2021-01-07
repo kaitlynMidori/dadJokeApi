@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Joke Finder</title>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <form id="js-form">
+            <ul class="formWrapper">
+                <li class= "form-row">
+                    <label class="search-term" for="joke-category">Joke Category:</label>
+                    <input class="joke-category input" type="text" name="joke-category" id="joke-category" placeholder="Select Category" list="joke-category-list">
+                    <datalist id="joke-category-list">
+                        <option value="Any">
+                        <option value="Misc">
+                        <option value="Programming">
+                        <option value="Dark">
+                        <option value="Pun">
+                        <option value="Spooky">
+                        <option value="Christmas">
+                    </datalist>
+                </li>
+
+                <li class="form-row">
+                    <label class="search-term" for="joke-type">Joke Type:</label>
+                    <input class="joke-type input" type="text" name="joke-type" id="joke-type" placeholder="Select Type" list="joke-type-list">
+                    <datalist id="joke-type-list">
+                        <option value="Single">
+                        <option value="Twopart">
+                    </datalist>
+                </li>
+
+                <li class="button">
+                    <input id="submit-btn" type="submit" value="Submit">
+                </li>
+
+            </ul>
+        </form>
+    </div>
+
+    <div id="results-container" class="hidden">
+        <h2>Joke Results</h2>
+            <ul id="results-list">   
+            </ul>
+    </div>
+
+
+    <!-- <div class="container">
+        <h1>Joke Finder</h1>
+        <fieldset>
+            <legend>Filter by:</legend>
+            <form id="js-joke-form">
+                <p>
+                    <label for="joke-category">Search by joke type:</label>
+                    <input type="text" name="joke-category" id="joke-category" placeholder="Joke Type" list="joke-list" required>
+                    <datalist id="userInput">
+                        <option value="General"></option>
+                        <option value="Knock-Knock"></option>
+                        <option value="Programming"></option>
+                    </datalist>
+                </p>
+                <button type="submit"> Fetch!!</button>
+            </form>
+        </fieldset>
+        </section> -->
+        
+        <!-- add section element to hold image whish is hidden from user until they click -->
+        <!-- <section id="results" hidden>
+            <h2>Search results</h2>
+            <ul id="results-list"></ul>
+        </section>
+    </div> -->
+        
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
