@@ -15,8 +15,8 @@
             <h1>Funny App</h1>
         </header>
         
-        <legend>Select:</legend>
         <fieldset id="select">
+            <legend>Select:</legend>
                 <div id="form-check">
                     <input type="radio"  id="any" name="type" value="Any" checked>
                     <label for="any">Any</label>
@@ -28,9 +28,10 @@
 
         <br>
 
-        <legend>Custom Options:</legend>
         <fieldset id="options" disabled>
+            
                 <div id="form-check form-check-inline">
+                    <legend>Custom Options:</legend>
                     <input type="checkbox" id="coding" name="category" value="Programming">
                     <label for="coding">Programming</label>
                 
@@ -55,18 +56,16 @@
         <br>
 
             <form>
+                
                 <legend>Search by Keyword:</legend>
                 <input type="form-control" placeholder="Enter a keyword" id="keyword">
+            
             </form>
 
             <br>
 
             <button type="submit" id="submit button">Tell me a joke!</button>
-            
-            <section id="results">
-                <article> Results:</article>
-                <div id="result"></div>
-            </section>
+            <div id="result"></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"

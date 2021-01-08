@@ -4,19 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joke App</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-
+    
 </head>
 <body>
     <div id="container">
-        <header>
-            <h1>Funny App</h1>
-        </header>
-        
-        <legend>Select:</legend>
-        <fieldset id="select">
+        <h1>Funny App</h1>
+        <fieldset>
+            <legend>Select:</legend>
                 <div id="form-check">
                     <input type="radio"  id="any" name="type" value="Any" checked>
                     <label for="any">Any</label>
@@ -26,10 +20,8 @@
                 </div>
         </fieldset> 
 
-        <br>
-
-        <legend>Custom Options:</legend>
         <fieldset id="options" disabled>
+            <legend>Custom Options:</legend>
                 <div id="form-check form-check-inline">
                     <input type="checkbox" id="coding" name="category" value="Programming">
                     <label for="coding">Programming</label>
@@ -50,23 +42,12 @@
                     <label for="spooky">Spooky</label>
                 </div>
         </fieldset>
-   
-
-        <br>
-
-            <form>
-                <legend>Search by Keyword:</legend>
+            <!-- <form>
                 <input type="form-control" placeholder="Enter a keyword" id="keyword">
-            </form>
+            </form> -->
 
-            <br>
-
-            <button type="submit" id="submit button">Tell me a joke!</button>
-            
-            <section id="results">
-                <article> Results:</article>
-                <div id="result"></div>
-            </section>
+            <button type="submit" id="submit button">Tell me a joke</button>
+            <div id="result"></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"

@@ -44,7 +44,8 @@ const getJoke = async () => {
     //console.log user selected joke category
     console.log(category);
     //declare url = dynamically generate url inserting user selected category
-    let url = `https://v2.jokeapi.dev/joke/${category}`;
+    let url = `https://v2.jokeapi.dev/joke/${category}
+    blacklistFlags=nsfw`;
     // declare keyword = HTML form div 'keyword' element id
     let keyword = document.getElementById("keyword").value;
     //if keyword does not equal empty; dynamically generate url with user keyword input

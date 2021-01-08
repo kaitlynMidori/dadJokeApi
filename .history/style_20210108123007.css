@@ -6,7 +6,6 @@ body{
     background-image: url("screenshots/white-teal backdrop.jpg");
     /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
     min-height: 100vh;
-    font-size: 18px;
 }
 
 * {
@@ -26,10 +25,9 @@ h1 {
 
 button{
     background-color: white;
-    border-style: solid;
-    border-color: black;
-    margin-left: 10px;
-    margin-top: 5px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
     font-size: 18px;
     font-weight: 500;
@@ -42,55 +40,36 @@ button{
 }
 
 #keyword {
-    border-style: solid;
-    border-color: black;
-    margin-left: 10px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
     font-size: 18px;
     font-weight: 500;
     text-align: center;
     color: black;
     cursor: pointer;
-    margin-bottom: 0;
-    /* border-radius: 3px; */
-    padding: 10px 20px;  
+    
 } 
 
 #options{
     background-color: white;
-    border-style: solid;
-    border-color: black;
-    margin-left: 10px;
-    width: 70%;
-    padding: 10px 20px;
-    font-size: 18px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+
 }
 
 #select {
     background-color: white;
-    border-style: solid;
-    border-color: black;
-    margin-left: 10px;
-    width: 70%;
-    padding: 10px 20px;
-    font-size: 18px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
 
 legend {
     margin-left: 10px;
     margin-bottom: 5px;
-}
-
-#result {
-    margin-left: 10px;
-}
-
-#results {
-    background-color: white;
-    border-style: solid;
-    border-color: black;
-    margin-top: 80px;
-    margin-left: 8px;
-    margin-right: 8px;
-    padding: 10px 20px;
 }
